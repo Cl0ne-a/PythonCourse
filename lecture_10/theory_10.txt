@@ -1,0 +1,5 @@
+if -> elif -> else
+
+x for x in list if ...
+
+name = one() if a > b else two()

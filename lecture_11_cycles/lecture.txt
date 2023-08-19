@@ -1,0 +1,33 @@
+cycles:
+- while
+- for
+
+on:
+- collection
+- range
+- condition
+
+
+Ex:
+for _ in range(<integer>):
+    some action
+
+
+for x in <collection>:
+    some action
+
+
+for x in <collection>:
+    some action
+else
+
+while ...:
+else
+
+endless:
+while True:
+   ...
+
+
+on condition we can pass/continue
+
