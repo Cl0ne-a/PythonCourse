@@ -23,3 +23,9 @@ def print_text(path):
 print(next(print_text("text.txt")))
 print(next(print_text("text.txt")))
 print(next(print_text("text.txt")))
+
+
+# OUTPUT:
+# This code defines a fun ction called plus_one that takes a single argument number and returns that number plus
+# This code defines a fun ction called plus_one that takes a single argument number and returns that number plus
+# This code defines a fun ction called plus_one that takes a single argument number and returns that number plus
