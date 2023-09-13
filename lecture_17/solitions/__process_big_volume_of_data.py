@@ -3,21 +3,27 @@
 # великі об'єми даних, розбиваючи їх на частини.
 
 
+# def text_breaker(function):
+#     def wrapper(path):
+#         for line in function(path):
+#             yield line
+#     return wrapper
+
 def text_breaker(function):
     def wrapper(path):
-        for line in function(path):
-            yield line
+        yield next(iter(function(path)))
+        # for line in iter(function(path)):
+        #     yield line
     return wrapper
 
 
 @text_breaker
 def print_text(path):
-    return iter(list(open(path, "r").read().split(". ")))
+    yield from open(path, "r").read().split(". ")
 
 
 print(next(print_text("text.txt")))
 print(next(print_text("text.txt")))
-# print(next(print_text("text.txt")))
 
 
 # OUTPUT:
